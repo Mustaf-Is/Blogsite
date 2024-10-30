@@ -1,0 +1,297 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: 'Raleway', sans-serif;
+     background-color: #f1f1f1;
+     color: #000;
+}
+
+header {
+     height: 200px;
+     text-align: center;
+     padding: 1.5rem;
+     /* border-bottom: 1px solid #000; */
+}
+
+h1 {
+     text-transform: uppercase;
+     padding: 1.5rem;
+     font-style: bold;
+     font-size: 35px;
+}
+
+p {
+     line-height: 1.5;
+     font-size: 15px;
+     font-weight: 100;
+}
+
+header span {
+     background-color: #000;
+     color: #fff;
+     padding: 2px 5px;
+     text-align: center;
+}
+
+.content {
+     width: 95%;
+     margin: auto;
+}
+
+[class*="col-"] {
+     width: 100%;
+     float: left;
+}
+
+.col-item {
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+     margin-bottom: 3rem;
+     background-color: #fff;
+}
+
+.col-item h2,
+h3,
+p,
+button {
+     padding: 10px 15px;
+}
+
+.col-8 .col-item .comments {
+     display: none;
+}
+
+.col-8 .col-item p {
+     margin: 15px 0;
+}
+
+.col-8 .col-item h3 {
+     font-weight: 300;
+}
+
+.col-8 .col-item span {
+     color: #666666;
+}
+
+.col-8 .col-item button {
+     float: left;
+     display: block;
+     width: 150px;
+     margin: 15px;
+     background-color: #fff;
+     border: 1px solid #ccc;
+     font-size: 16px;
+     padding: 15px;
+     /* margin-top: 0; */
+}
+
+.col-8 .col-item button:hover {
+     cursor: pointer;
+     background-color: #ccc;
+}
+
+.col-item img {
+     width: 100%;
+     height: auto;
+}
+
+.col-4 .posts h3,
+.tags h3 {
+     padding: 25px 15px;
+     font-weight: 400;
+     font-size: 20px;
+     background-color: #f1f1f1;
+}
+
+.col-4 .posts .post {
+     padding: 15px;
+}
+
+.col-4 .posts img {
+     width: 50px;
+     float: left;
+     /* margin-top: 3px; */
+     margin-right: 16px;
+}
+
+.col-4 .posts .post h4 {
+     font-size: 17px;
+     font-weight: 500;
+     padding: 3px;
+}
+
+.col-4 .posts .post p {
+     font-size: 14px;
+     padding-top: 0;
+     padding-bottom: 0;
+}
+
+.posts .post {
+     border-bottom: 1px solid #ccc;
+}
+
+.posts .post:hover {
+     cursor: pointer;
+     background-color: #ccc;
+}
+
+.posts .hidden {
+     display: none;
+}
+
+.col-4 .tags .tags-container {
+     margin: 15px;
+}
+
+.tags .tags-container span {
+     background-color: #f1f1f1;
+     display: inline-block;
+     margin: 10px 0;
+     font-size: 14px;
+     padding: 2px 5px;
+}
+
+.tags .tags-container span.selected {
+     font-size: 16px;
+     background-color: #000;
+     color: #fff;
+}
+
+footer {
+     height: 150px;
+     background-color: #616161;
+     text-align: center;
+     align-content: center;
+     float: left;
+     bottom: 0;
+     width: 100%;
+     color: #fff;
+}
+
+footer span a {
+     color: white;
+     font-style: italic;
+}
+/** First Breaking point for screens 600px and bigger ( to 992px, beacuese from there strats the second breaking point)  */
+@media only screen and (min-width: 600px) {
+     .comments {
+          display: block !important;
+          float: right;
+          font-weight: 600;
+     }
+
+     .comments span {
+          background-color: #000;
+          color: #fff !important;
+          padding: 5px 10px;
+          margin: 0 10px;
+          border-radius: 5px;
+     }
+
+     .col-s-1 {
+          width: 8.33%;
+     }
+
+     .col-s-2 {
+          width: 16.66%;
+     }
+
+     .col-s-3 {
+          width: 25%;
+     }
+
+     .col-s-4 {
+          width: 33.33%;
+     }
+
+     .col-s-5 {
+          width: 41.66%;
+     }
+
+     .col-s-6 {
+          width: 50%;
+     }
+
+     .col-s-7 {
+          width: 58.33%;
+     }
+
+     .col-s-8 {
+          width: 66.66%;
+     }
+
+     .col-s-9 {
+          width: 75%;
+     }
+
+     .col-s-10 {
+          width: 83.33%;
+     }
+
+     .col-s-11 {
+          width: 91.66%;
+     }
+
+     .col-s-12 {
+          width: 100%;
+     }
+}
+/** Second Breaking point for screens 992px and bigger  */
+@media only screen and (min-width: 992px) {
+     .hidden {
+          display: block !important;
+     }
+
+     .col-1 {
+          width: 8.33%;
+     }
+
+     .col-2 {
+          width: 16.66%;
+     }
+
+     .col-3 {
+          width: 25%;
+     }
+
+     .col-4 {
+          width: 33.33%;
+          padding-left: 15px;
+     }
+
+     .col-5 {
+          width: 41.66%;
+     }
+
+     .col-6 {
+          width: 50%;
+     }
+
+     .col-7 {
+          width: 58.33%;
+     }
+
+     .col-8 {
+          width: 66.66%;
+          padding-right: 15px;
+     }
+
+     .col-9 {
+          width: 75%;
+     }
+
+     .col-10 {
+          width: 83.33%;
+     }
+
+     .col-11 {
+          width: 91.66%;
+     }
+
+     .col-12 {
+          width: 100%;
+     }
+}
